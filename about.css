@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,300;1,400;1,500&family=Press+Start+2P&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background: #081b29;
+    color: #fff;
+    overflow-x: hidden;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+  
+}
+.container-left{
+    width: 50%;
+  
+
+}
+.container-rigth{
+    display: flex;
+    justify-content: end;
+    width: 50%;
+}
+.label{
+    margin-bottom: 20px;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.tecnologies a {
+    display:inline-flex ;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background: transparent;
+    border: 2px solid #00eeff;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00eeff;
+    text-decoration: none;
+    margin: 30px 20px 20px 0;
+    transition: all 500ms ease-in-out;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+    transition: .5s ease;
+    opacity: 0;
+    font-size: 35px;
+
+
+    
+}
+.tecnologies a:first-of-type{
+    margin-left: 0!important;
+}
+.tecnologies{
+    padding-inline-start: 30px;
+
+}
+.container02{
+    border-radius: 30px;
+    background-color:#000 ;
+    border: 1px solid #0ef;
+    box-shadow: 0 0 2px rgba(0, 255, 255, 0.425),
+    0 0 10px rgba(0, 255, 255, 0.425), 0 0 10px rgba(0, 255, 255, 0.409),
+    0 0 10px rgba(0, 255, 255, 0.425), 0 0 10px rgba(0, 255, 255, 0.425);
+    animation: show 1s ease forwards;
+    transition: all 1s ease;
+    animation-delay: 1.5s;
+    opacity: 0;
+}
+
+label{
+    display: block;
+    font-size: 25px;
+    opacity: 0;
+    animation:  slideLeft 1s ease forwards;
+    animation-delay: 2s;
+
+}
+
+.text-02{
+    margin-top: 50px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+    font-size: 25px;
+}
+.img-about{
+    display: flex;
+}
+img{
+    margin-right: 50px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10%;
+    margin-top: 5%;
+    margin-left: 1%;
+    border: 3px solid #0ef;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 1s;
+}
+img:hover{
+    transform: scale(0.90);
+}
+.tecnologies a:hover{
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan;
+}
+
+
+.admin{
+    width: 500px;
+    height: 400px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+}
+.about-project{
+    width: 550px;
+    font-size: 25px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+}
+.sub-tittle{
+    font-size: 30px;
+    opacity: 0;
+    animation: slideRigth 1s ease forwards;
+    animation-delay: 1s;
+}
+
+
+@keyframes slideRigth {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideLeft {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideTop {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideBottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes show {
+    0%{
+        
+        opacity: 0;
+    }
+    100%{
+        
+        opacity: 1;
+    }
+}
